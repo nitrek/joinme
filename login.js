@@ -34,22 +34,25 @@ $(window, document, undefined).ready(function() {
 
 });
 $("#login").click(function() {
-    if ($("#name").val().length <= 2) {
-        $("#messages").html("Name is required");
+    if ($("#name").val().length <= 7) {
+        $("#messages").html("Enter a valid Peoplesoftid");
         $("#messages").css('color', '#df000c');
         $("#messages").css("background", "#ffbaba");
-    } else if ($("#email").val().length <= 2 && !isValidEmailAddress($.trim($("#email").val()))) {
+    }/* else if ($("#email").val().length <= 2 ) {
         $("#messages").html("Valid Email is required");
         $("#messages").css('color', '#df000c');
         $("#messages").css("background", "#ffbaba");
-    } else {
+    }*/ else {
         $('#name').css('text-transform', 'lowercase');
         $('#name').css('text-transform', 'lowercase');
         $("#messages").html("logging In ..");
         $("#messages").css('color', '#00e64d');
         localStorage.setItem("currentName", $.trim($("#name").val()));
         localStorage.setItem("currentEmail", $.trim($("#email").val()));
-        window.location.replace("home.html");
+		if(localStorage.getItem($.trim($("#name").val())))
+			window.location.replace("home.html");
+		else
+			window.location.replace("prep.html");
     }
 });
 

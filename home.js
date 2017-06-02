@@ -8,3 +8,13 @@ $("#myinterests").click(function() {
     console.log("ds");
     $("#mdl-grid-content").load('interests.html');
 });
+$("#moveNext").click(function() {
+    console.log("ds");
+	localStorage.setItem(localStorage.getItem("currentName"),"true");
+    window.location.replace('home.html')
+});
+$("#moveSkipNext").click(function() {
+    console.log("ds");
+	localStorage.setItem(localStorage.getItem("currentName"),"true");
+    window.location.replace('home.html')
+});

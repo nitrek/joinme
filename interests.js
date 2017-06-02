@@ -1,0 +1,4 @@
+$("#addinterests").click(function(e){
+	
+	
+})

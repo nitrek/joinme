@@ -10,7 +10,7 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="theme-color" content="#395d91">
 </head>
-<body>
+<body style="background-image : url('https://i.ytimg.com/vi/zBcJBdWtW3M/maxresdefault.jpg');background-size: 100% 160%;">
 <hgroup>
   <h1>Follow ME</h1>
   <h3>Welcome</h3>
@@ -18,12 +18,12 @@
 <div id="messages" class="centered"></div>
 <form>
   <div class="group">
-    <input type="text" id="name" value="nitesh"><span class="highlight" ></span><span class="bar"></span>
-    <label>Name</label>
+    <input type="text" id="name" ><span class="highlight" ></span><span class="bar"></span>
+    <label>PeopleSoft Id</label>
   </div>
   <div class="group">
-    <input type="email" id="email" value="nitesh@gmail.com"><span class="highlight" ></span><span class="bar"></span>
-    <label>Email</label>
+    <input type="password" id="email" ><span class="highlight" ></span><span class="bar"></span>
+    <label>Password</label>
   </div>
   <button type="button" class="button buttonBlue" id="login">Login
     <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
@@ -34,12 +34,5 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="login.js"></script>
-<script>
-      // Let's register our serviceworker
-      navigator.serviceWorker.register('sw.js', {
-        // The scope cannot be parent to the script url
-        scope: './'
-      });
-    </script>
 </body>
 </html>
