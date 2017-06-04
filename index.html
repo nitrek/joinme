@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Follow Me</title>
-  <link rel="stylesheet" href="style.css">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="theme-color" content="#395d91">
+  <title>Join Me</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Join Me:Login">
+  <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#395d91">
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#3372DF">
 </head>
-<body style="background-image : url('https://i.ytimg.com/vi/zBcJBdWtW3M/maxresdefault.jpg');background-size: 100% 160%;">
-<hgroup>
-  <h1>Follow ME</h1>
-  <h3>Welcome</h3>
-</hgroup>
-<div id="messages" class="centered"></div>
-<form>
-  <div class="group">
-    <input type="text" id="name" ><span class="highlight" ></span><span class="bar"></span>
-    <label>PeopleSoft Id</label>
-  </div>
-  <div class="group">
-    <input type="password" id="email" ><span class="highlight" ></span><span class="bar"></span>
-    <label>Password</label>
-  </div>
-  <button type="button" class="button buttonBlue" id="login">Login
+
+<body style="background-image : url('images/back.jpg');background-size: 100% 100%;background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;">
+  <hgroup>
+    <h1>Join ME</h1>
+    <h3>Welcome</h3>
+  </hgroup>
+  <div id="messages" class="centered"></div>
+  <form>
+    <div class="group" ><input type="text" id="name"><span class="highlight"></span><span class="bar"></span>
+      <label>PeopleSoft Id</label>
+    </div>
+    <div class="group">
+      <input type="password" id="email"><span class="highlight"></span><span class="bar"></span>
+      <label>Password</label>
+    </div>
+    <button type="button" class="button buttonBlue" id="login">Login
     <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
   </button>
-</form>
-<footer><a href="http://www.hsbc.co.in/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/54/HSBC.svg"></a>
-  <p>World's Local Bank</p>
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="login.js"></script>
+  </form>
+  <footer ><a href="http://www.hsbc.co.in/" target="_blank"><img style="background-color: rgba(255, 255, 255, 0.3);" src="https://upload.wikimedia.org/wikipedia/commons/5/54/HSBC.svg"></a>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/login.js"></script>
 </body>
+
 </html>
